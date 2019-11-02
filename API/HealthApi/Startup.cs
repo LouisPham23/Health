@@ -28,6 +28,14 @@ namespace HealthApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<HealthContext>(options => options.UseSqlServer(Configuration.GetConnectionString("HealthConStr")));
+            services.AddCors(o => o.AddPolicy("HealthPolicy", builder =>
+            {
+                //builder.WithOrigins("http://localhost:6001");
+                builder.AllowAnyOrigin();
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
+            }));
+
             services.AddControllers();
         }
 
@@ -42,6 +50,8 @@ namespace HealthApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
