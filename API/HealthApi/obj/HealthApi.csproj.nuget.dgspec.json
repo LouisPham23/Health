@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/louispham/Documents/Dev/Health/API/HealthApi/HealthApi.csproj": {}
+    "C:\\Users\\Louis\\Desktop\\Projects\\Health\\API\\HealthApi\\HealthApi.csproj": {}
   },
   "projects": {
-    "/Users/louispham/Documents/Dev/Health/API/HealthApi/HealthApi.csproj": {
+    "C:\\Users\\Louis\\Desktop\\Projects\\Health\\API\\HealthApi\\HealthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/louispham/Documents/Dev/Health/API/HealthApi/HealthApi.csproj",
+        "projectUniqueName": "C:\\Users\\Louis\\Desktop\\Projects\\Health\\API\\HealthApi\\HealthApi.csproj",
         "projectName": "HealthApi",
-        "projectPath": "/Users/louispham/Documents/Dev/Health/API/HealthApi/HealthApi.csproj",
-        "packagesPath": "/Users/louispham/.nuget/packages/",
-        "outputPath": "/Users/louispham/Documents/Dev/Health/API/HealthApi/obj/",
+        "projectPath": "C:\\Users\\Louis\\Desktop\\Projects\\Health\\API\\HealthApi\\HealthApi.csproj",
+        "packagesPath": "C:\\Users\\Louis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Louis\\Desktop\\Projects\\Health\\API\\HealthApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/louispham/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Louis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +39,20 @@
         "netcoreapp3.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
             }
@@ -62,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

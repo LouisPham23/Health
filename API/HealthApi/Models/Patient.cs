@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HealthApi.Models
 {
     public class Patient
     {
+        [Key]
         public int PatientId { get; set; }
         public string Name { get; set; }
         public ICollection<Ailment> Ailments { get; set; }
